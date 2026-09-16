@@ -1,0 +1,39 @@
+/* Configuração básica para alinhar o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* --- AQUI COMEÇA A AULA DE GRID --- */
+
+.catalogo-filmes {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Espaço entre os filmes */
+    padding: 30px;
+}
+
+/* Estilizando o card do filme para ficar bonito */
+.cartaz-filme {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cartaz-filme img {
+    /*width: 100%;*/
+    border-radius: 5px;
+}
